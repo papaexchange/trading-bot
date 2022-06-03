@@ -7,11 +7,11 @@ export const ropstenProvider = new ethers.providers.JsonRpcProvider(
 );
 
 export const PolygonProvider = new ethers.providers.JsonRpcProvider(
-    `https://polygon-rpc.com/', ChainId.Polygon
+    'https://polygon-rpc.com/', ChainId.Polygon
 );
 
 export const BSCProvider = new ethers.providers.JsonRpcProvider(
-    `https://bsc-dataseed.binance.org/`, ChainId.BSC
+    'https://bsc-dataseed.binance.org/', ChainId.BSC
 )
 
 export const JSON_RPC_PROVIDERS: {
