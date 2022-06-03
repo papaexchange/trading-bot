@@ -6,15 +6,20 @@ export const ropstenProvider = new ethers.providers.JsonRpcProvider(
     `https://ropsten.infura.io/v3/${process.env.ROPSTEN_ALCHEMY_KEY}`
 );
 
-export const polygonProvider = new ethers.providers.JsonRpcProvider(
-    'https://polygon-rpc.com/', ChainId.Polygon
+export const PolygonProvider = new ethers.providers.JsonRpcProvider(
+    `https://polygon-rpc.com/', ChainId.Polygon
+);
+
+export const BSCProvider = new ethers.providers.JsonRpcProvider(
+    `https://bsc-dataseed.binance.org/`, ChainId.BSC
 )
 
 export const JSON_RPC_PROVIDERS: {
     [key: number]: ethers.providers.JsonRpcProvider;
 } = {
     [ChainId.Ropsten]: ropstenProvider,
-    [ChainId.Polygon]: polygonProvider
+    [ChainId.Polygon]: polygonProvider,
+    [ChainId.BSC]: BSCProvider
 };
 
 
