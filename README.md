@@ -17,9 +17,11 @@ generate a menmonic using ethers js script
 
 `yarn generate-menmonic`
 
-and add it on the .env file as follows:
+and add it to a new .env file as follows:
 
 `MENMONIC= add_here_generated_menmonic`
+IS_SIMULATION=false
+
 
 With a menmonic you can generate multiple accounts, please store it in a safe place before transfer any funds to it
 
