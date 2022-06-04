@@ -30,7 +30,7 @@ Now you can start configure the Bot to do random trades and generate volume to f
 ```
     baseTokenAddress: string;
     quoteTokenAddress: string;
-    chainId: ChainId;
+    chainId: ChainId; (This will be either Polygon or BSC)
     maxSellUnit: number;
     minSellUnit: number;
     maxBuyUnit: number;
