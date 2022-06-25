@@ -67,3 +67,5 @@ After configure the bot you can just run:
 `yarn start`
 
 and bot will run till be out of gas.
+
+On BSC network you my need to change your base and quote token addresses around.
